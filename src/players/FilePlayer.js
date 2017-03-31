@@ -33,7 +33,8 @@ export default class FilePlayer extends Base {
     super.componentWillUnmount()
   }
   load (url) {
-    this.player.src = url
+    this.player.src = url;
+    this.player.load();
   }
   play () {
     this.player.play()
